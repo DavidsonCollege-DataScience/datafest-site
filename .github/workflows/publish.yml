@@ -11,17 +11,35 @@ on:
   workflow_dispatch:
 
 jobs:
-  render-and-publish:
+  render:
     runs-on: ubuntu-latest
+    # blog/datafest2026.qmd runs an R chunk (rvest) at render time, so this
+    # needs real R + tidyverse, not just the Quarto CLI -- same rocker/verse
+    # image pg-data-wrangle-site's workflow uses (it bundles Quarto too).
+    container:
+      image: rocker/verse:latest
     steps:
       - name: Checkout datafest-site
         uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
       - name: Render site
         run: quarto render
+
+      - name: Upload artifact for publish job
+        uses: actions/upload-artifact@v4
+        with:
+          name: site_build
+          path: docs
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: render
+    steps:
+      - name: Get artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: site_build
+          path: build
 
       - name: Checkout datasci-hub
         uses: actions/checkout@v4
@@ -32,7 +50,7 @@ jobs:
 
       - name: Sync build output into hub's /datafest
         run: |
-          rsync -a --delete docs/ hub/datafest/
+          rsync -a --delete build/ hub/datafest/
           cd hub
           git config user.name "datafest-site CI"
           git config user.email "actions@users.noreply.github.com"
