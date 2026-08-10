@@ -9,13 +9,13 @@ project:
 website:
   title: "Davidson DataFest"
   description: "48-hour data science hackathon at Davidson College!"
-  site-url: https://davidsoncollege-datascience.github.io/datafest
+  site-url: https://datasci.davidson.edu/datafest
   repo-url: https://github.com/DavidsonCollege-DataScience/datafest
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
   favicon: img/Circle-favicon-32x32.png
   page-footer: 
     center: |
-      [![](/img/davidson-wordmark-horizontal-lockup-white_sm.png){fig-alt="Davidson College" target="_blank" width="50%"}](https://davidson.edu)
+      [![](img/davidson-wordmark-horizontal-lockup-white_sm.png){fig-alt="Davidson College" target="_blank" width="50%"}](https://davidson.edu)
     right: "Made with Quarto" 
     background: "#0f1012"
     foreground: "#ffffff"

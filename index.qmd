@@ -27,7 +27,7 @@ listing:
   - id: sponsors-listing
     type: grid
     grid-columns: 3
-    image-placeholder: "/img/datafest_davidson.png"
+    image-placeholder: "img/datafest_davidson.png"
     contents:
       - sponsors.yaml
   - id: blog-listing
