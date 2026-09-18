@@ -1,7 +1,8 @@
 ---
 title: "Davidson DataFest"
 subtitle: "48-hour Data Science Hackathon!"
-format: 
+description: "DataFest is a 48-hour data science hackathon at Davidson College where students of all skill levels analyze real-world data, compete for prizes, and network with industry sponsors."
+format:
   html: 
     smooth-scroll: true
     include-in-header:

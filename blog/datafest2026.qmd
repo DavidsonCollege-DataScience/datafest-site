@@ -1,5 +1,7 @@
 ---
 title: "From Uncertainty to Insight: How DataFest Transformed the Way I Understand Data"
+description: "Bioinformatics major Eliezer Majambere '27 reflects on cleaning messy datasets and collaborating with Trane Technologies at Davidson DataFest, in an article originally published by Davidson College News."
+image: img/datafest2026_groupphoto.jpg
 format: html
 lightbox: true
 author: Eleiezer Majambere

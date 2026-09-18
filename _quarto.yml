@@ -4,14 +4,17 @@ project:
   render:
     - "*.qmd"
   resources: 
-    - "google77fcea9ec5fbdd3b.html"
+    - "google324d494f65537ec9.html"
 
 website:
   title: "Davidson DataFest"
   description: "48-hour data science hackathon at Davidson College!"
   site-url: https://datasci.davidson.edu/datafest
   repo-url: https://github.com/DavidsonCollege-DataScience/datafest
-  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  open-graph:
+    image: img/datafest_davidson.png
+  twitter-card:
+    image: img/datafest_davidson.png
   favicon: img/Circle-favicon-32x32.png
   page-footer: 
     center: |

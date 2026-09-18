@@ -1,5 +1,7 @@
 ---
 title: "From Participant to Mentor to Organizer: A Statistical Journey of DataFest"
+description: "Davidson Professor Kevin Wang traces his statistical journey from a first-year DataFest participant at SMU to a mentor and, now, a DataFest organizer at Davidson College."
+image: ../img/kwang.jpg
 format: html
 author: Kevin Wang
 date: Mar 17, 2026

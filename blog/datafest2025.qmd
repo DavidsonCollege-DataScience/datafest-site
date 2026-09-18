@@ -1,5 +1,7 @@
 ---
 title: "Highlights from DataFest 2025"
+description: "20 Davidson College students analyzed real estate data, enjoyed good food, and networked with Charlotte-area employers at DataFest 2025, hosted at the Jay Hurt Hub for Innovation and Entrepreneurship."
+image: ../img/datafest2025_01.jpg
 format: html
 lightbox: true
 author: Pete Benbow
